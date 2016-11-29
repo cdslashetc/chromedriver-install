@@ -20,3 +20,4 @@ apt-get -y install python-pip
 which pip3
 pip3 install --upgrade pip
 pip3 install pyvirtualdisplay selenium
+pip3 install behave
