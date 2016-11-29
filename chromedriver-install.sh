@@ -17,6 +17,6 @@ mv -f chromedriver /usr/local/share/chromedriver
 ln -fs /usr/local/share/chromedriver /usr/local/bin/chromedriver
 ln -fs /usr/local/share/chromedriver /usr/bin/chromedriver
 apt-get -y install python-pip
-which pip
-pip install --upgrade pip
-pip install pyvirtualdisplay selenium
+which pip3
+pip3 install --upgrade pip
+pip3 install pyvirtualdisplay selenium
