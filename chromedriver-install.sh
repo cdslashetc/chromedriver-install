@@ -19,6 +19,9 @@ apt-get -y install unzip
 rm -f LATEST_RELEASE
 wget -N https://chromedriver.storage.googleapis.com/LATEST_RELEASE
 r=$(cat LATEST_RELEASE)
+if [ -f chromedriver_linux64.zip ]; then
+  mv  chromedriver_linux64.zip chromedriver_linux64_old.zip
+fi
 wget -N http://chromedriver.storage.googleapis.com/$r/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 chmod +x chromedriver
