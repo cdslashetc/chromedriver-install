@@ -1,4 +1,10 @@
 #!/bin/bash
+# behave version
+bv=1.25
+# selenium version
+sv=3.40
+# chromedriver version
+cv=2.31
 # take a snapshot of /usr/local in case we need to revert
 cd /usr
 d=$(date --iso-8601)
@@ -30,6 +36,7 @@ ln -fs /usr/local/share/chromedriver /usr/local/bin/chromedriver
 ln -fs /usr/local/share/chromedriver /usr/bin/chromedriver
 apt-get -y install python-pip
 which pip3
-pip3 install --upgrade pip
-pip3 install pyvirtualdisplay selenium
-pip3 install behave
+#pip3 install --upgrade
+pip3 install pyvirtualdisplay
+pip3 install selenium=$sv
+pip3 install behave=$bv
