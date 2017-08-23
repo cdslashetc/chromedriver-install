@@ -4,7 +4,7 @@ bv=1.25
 # selenium version
 sv=3.40
 # chromedriver version
-cv=2.31
+r=2.31
 # take a snapshot of /usr/local in case we need to revert
 cd /usr
 d=$(date --iso-8601)
@@ -23,8 +23,8 @@ apt-get -y install google-chrome
 apt-get -y install xvfb
 apt-get -y install unzip
 rm -f LATEST_RELEASE
-wget -N https://chromedriver.storage.googleapis.com/LATEST_RELEASE
-r=$(cat LATEST_RELEASE)
+#wget -N https://chromedriver.storage.googleapis.com/LATEST_RELEASE
+#r=$(cat LATEST_RELEASE)
 if [ -f chromedriver_linux64.zip ]; then
   mv  chromedriver_linux64.zip chromedriver_linux64_old.zip
 fi
