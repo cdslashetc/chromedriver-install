@@ -2,13 +2,13 @@
 # behave version
 bv=1.2.5
 # selenium version
-sv=3.40
+sv=3.4.0
 # chromedriver version
 r=2.31
 # take a snapshot of /usr/local in case we need to revert
 cd /usr
 d=$(date --iso-8601)
-tar cvf local-$d.tar
+tar cvf local-$d.tar local
 pxz -v9 local-$d.tar
 # return to home
 cd ~
