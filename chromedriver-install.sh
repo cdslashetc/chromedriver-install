@@ -1,6 +1,6 @@
 #!/bin/bash
 # behave version
-bv=1.25
+bv=1.2.5
 # selenium version
 sv=3.40
 # chromedriver version
