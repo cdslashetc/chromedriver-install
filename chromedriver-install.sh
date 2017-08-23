@@ -38,5 +38,5 @@ apt-get -y install python-pip
 which pip3
 #pip3 install --upgrade
 pip3 install pyvirtualdisplay
-pip3 install selenium=$sv
-pip3 install behave=$bv
+pip3 install selenium==$sv
+pip3 install behave==$bv
