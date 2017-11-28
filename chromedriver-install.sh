@@ -4,7 +4,7 @@ bv=1.2.5
 # selenium version
 sv=3.4.0
 # chromedriver version
-r=2.31
+r=2.33
 # take a snapshot of /usr/local in case we need to revert
 cd /usr
 d=$(date --iso-8601)
