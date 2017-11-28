@@ -7,9 +7,12 @@ sv=3.4.0
 r=2.33
 # take a snapshot of /usr/local in case we need to revert
 cd /usr
+if [ ! -d local-archive ]; then
+  mkdir local-archive
+fi
 d=$(date --iso-8601)
-tar cvf local-$d.tar local
-pxz -v9 local-$d.tar
+tar cvf local-archive/local-$d.tar local
+pxz -v9 local-archive/local-$d.tar
 # return to home
 cd ~
 apt-get update
